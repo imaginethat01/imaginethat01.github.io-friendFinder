@@ -8,7 +8,7 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 	<script src="https://code.jquery.com/jquery.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
-	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="/style.css">
 </head>
 <body>
 	<div class="container">
@@ -21,18 +21,12 @@
 				<label for="usr">Name: (Required)</label>
 				<input type="text" class="form-control" id="name">
 			</div>
-			<div class="form-group">
-				<label for="pic">URL for Photo: (Required)</label>
-				<input type="text" class="form-control" id="pic">
-				<p>Generic Man: http://clipartix.com/wp-content/uploads/2016/05/Stick-figure-construction-worker-clipart-image-clip-art-a.jpg<p>
-				<p>Generic Woman: https://s-media-cache-ak0.pinimg.com/236x/a1/01/50/a1015051b09805f58525240c87b5c50b.jpg</p>
-			</div>
 			<hr>
 			<h2>Rate how strongly you agree with the following statements:</h2>
 
 			<div class="row col-lg-12">
 				<h3>Question 1</h3>
-				<h4>I often take lifestyle advice from Gwyneth Paltrow.</h4>
+				<h4>I Prefer thinking too much over just jumping in</h4>
 				<div class="form-group col-xs-3">
 					<select class="form-control" id="quest1">
 						<option>1 (Strongly Disagree)</option>
@@ -46,7 +40,7 @@
 
 			<div class="row col-lg-12">
 				<h3>Question 2</h3>
-				<h4>I like my steak well done, tough as leather without a trace of pink.</h4>
+				<h4>I like my skateboard wheels firm, but not too hard</h4>
 				<div class="form-group col-xs-3">
 					<select class="form-control" id="quest2">
 						<option>1 (Strongly Disagree)</option>
@@ -60,7 +54,7 @@
 
 			<div class="row col-lg-12">
 				<h3>Question 3</h3>
-				<h4>I would rather attend a Pearl Jam concert than a Taylor Swift show.</h4>
+				<h4>I prefer to live dangerously, over knowing exactly what might happen</h4>
 				<div class="form-group col-xs-3">
 					<select class="form-control" id="quest3">
 						<option>1 (Strongly Disagree)</option>
@@ -74,7 +68,7 @@
 
 			<div class="row col-lg-12">
 				<h3>Question 4</h3>
-				<h4>When buying beer, I tend to look for craft beers made by local microbreweries.</h4>
+				<h4>When buying beer, I tend to buy whatever I can afford</h4>
 				<div class="form-group col-xs-3">
 					<select class="form-control" id="quest4">
 						<option>1 (Strongly Disagree)</option>
@@ -88,7 +82,7 @@
 
 			<div class="row col-lg-12">
 				<h3>Question 5</h3>
-				<h4>What I can't stand are these newfangled cocktail bars with their chipped ice, muddled herbs, and hand crafted bitters.  When I ask for a cocktail I mean well rum in plastic cup with a bit of coke.</h4>
+				<h4>I prefer a strict sleep routine</h4>
 				<div class="form-group col-xs-3">
 					<select class="form-control" id="quest5">
 						<option>1 (Strongly Disagree)</option>
@@ -102,7 +96,7 @@
 
 			<div class="row col-lg-12">
 				<h3>Question 6</h3>
-				<h4>I like to torture and mutilate small animals.  I even have a special place where I keep the skeletons and bones of these animals.  I call it my trophy room.</h4>
+				<h4>I always thought that the idea of putting a Pokemon in a ball was kind of mean</h4>
 				<div class="form-group col-xs-3">
 					<select class="form-control" id="quest6">
 						<option>1 (Strongly Disagree)</option>
@@ -116,7 +110,7 @@
 
 			<div class="row col-lg-12">
 				<h3>Question 7</h3>
-				<h4>Drake should definately be included on any list of all time top 5 greatest hip artists.</h4>
+				<h4>I prefer listening to the classics of rock music over newer music</h4>
 				<div class="form-group col-xs-3">
 					<select class="form-control" id="quest7">
 						<option>1 (Strongly Disagree)</option>
@@ -130,7 +124,7 @@
 
 			<div class="row col-lg-12">
 				<h3>Question 8</h3>
-				<h4>I am an active person and enjoy a variety of activities such as running, biking, hiking, yoga, team sports, and crossfit.</h4>
+				<h4>I think a healthy body helps a healthy mind make healthy decisions</h4>
 				<div class="form-group col-xs-3">
 					<select class="form-control" id="quest8">
 						<option>1 (Strongly Disagree)</option>
@@ -158,7 +152,7 @@
 
 			<div class="row col-lg-12">
 				<h3>Question 10</h3>
-				<h4>If something benefits me personally, I don't care much how it affects others.  Since I am a man, I don't care much about equal pay for women.  I'm not the biggest fan of the Civil Rights movement either.</h4>
+				<h4>If something benefits me personally, I don't care much how it affects others.</h4>
 				<div class="form-group col-xs-3">
 					<select class="form-control" id="quest10">
 						<option>1 (Strongly Disagree)</option>
@@ -206,9 +200,6 @@
 		if($("#name").val().trim() === ''){
 			alert('Please enter a name');
 		}
-		else if($("#pic").val().trim() === ''){
-			alert('Please enter a link to photo');
-		}
 		else{
 			//empty array to hold the value from the survey questions
 			var answerArray = [];
@@ -220,7 +211,6 @@
 			var newFriend = 
 			{
 				name: $("#name").val().trim(),
-				photo: $("#pic").val().trim(),
 				scores: answerArray
 			};
 			//records the current location (should work after deployment)
@@ -257,7 +247,7 @@
 				}
 				//set up the display for the modal
 				var friendName = '<h4>' + bestFriend.name + '<h4>';
-				var friendPic = '<img width="300px" src=' + bestFriend.photo + '>';
+				var friendPic = '<img width="300px" src=' + bestFriend.photo + '>';	
 				//show the modal
 				$('#friend-modal').modal('show');
 				$('#friend-modal h4').html(friendName);
